@@ -1,0 +1,54 @@
+<!-- Contact Page Content -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul class="nav_ul">
+            <li class="nav_li"><a href="index.html">Home</a></li>
+            <li class="nav_li"><a href="about.html">About</a></li>
+            <li class="nav_li"><a href="projects.html">Projects</a></li>
+            <li class="nav_li"><a href="experience.html">Experience</a></li>
+            <li class="nav_li"><a href="skills.html">Skills</a></li>
+            <li class="nav_li"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<header class="contact_header">
+    <h1>Contact Me</h1>
+</header>
+
+<div class="contact_content">
+<section class="contact_info">
+    <h2>Contact Information</h2>
+    <p class="email">
+        <span class="w_email">Email:</span> gpapadopoulos@portfolio.htb
+        <br>
+    </p>
+    <p class="phone">
+        <span class="w_phone">Phone:</span> +123-456-7890
+        <br>
+    </p>
+</section>
+<section class="contact_form">
+    <h2>Tell Me Your Ideas</h2>
+    <form action="send.php" method="post">
+        <label for="name"></label>
+        <input class="input" placeholder="Name" type="text" id="name" name="name" required><br>
+
+        <label for="email"></label>
+        <input class="input" placeholder="Email" type="email" id="email" name="email" required><br>
+
+        <label for="message"></label>
+        <textarea class="input textarea" placeholder="Message" id="message" name="message"  required></textarea><br>
+
+        <button class="form_button" type="submit">Send Message</button>
+    </form>
+</section>
+</div>
+</body>
+</html>
+
