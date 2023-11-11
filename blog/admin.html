@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./src/admin.css">
+</head>
+<body> 
+    <div class="top-bar">
+        <a id="home" href="index.php">Home</a>
+        <a  id="logout" href="logout.php"><img src="./img/logout.png" alt="logout" height="18" width="18"></a>
+    </div>
+    <div class="header">
+        <h1>Admin Panel</h1>
+    </div>    
+    <div class="container">
+        <div class="form">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <h2>Change background image<img src="./img/paintbrush.png" alt="paintbrush" height="30" width="30"></h2>
+                <label for="fileToUpload" class="file">Choose File</label>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <br>
+                <input class="upload" type="submit" value="Upload" name="submit">
+            </form>
+        </div>
+        <div class="delete_post">
+            <h2>Delete Posts<img src="./img/x.png" alt="x" height="20" width="20"></h2>
+            
+                <ul>
+                    <li>
+                        <form method="post">
+                            Hello World: The Gateway to Programming                    <input type="hidden" name="post_id" value="11">
+                            <input class="delete" type="submit" name="delete" value="Delete">
+                        </form>
+                    </li>
+                    <li>
+                        <form method="post">
+                            The Art of Debugging: Mastering the Developer's Superpower                    <input type="hidden" name="post_id" value="10">
+                            <input class="delete" type="submit" name="delete" value="Delete">
+                        </form>
+                    </li>
+                    <li>
+                        <form method="post">
+                            Demystifying Programming Languages: Which One Should You Learn?                    <input type="hidden" name="post_id" value="9">
+                            <input class="delete" type="submit" name="delete" value="Delete">
+                        </form>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>
